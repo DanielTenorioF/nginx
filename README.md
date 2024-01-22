@@ -1,5 +1,7 @@
 # NGNIXS
 
+![image](/img/portada.png)
+
 1. [Introduccion](/contenido/introduccion.md)
 
 2. [Comparativa con Apache](/contenido/comparativa.md)
@@ -12,4 +14,10 @@
 
 - [Raiola Networks](https://raiolanetworks.es/blog/nginx-vs-apache-cual-es-mejor-servidor-web/#cual_es_la_diferencia_entre_apache_y_nginx)
 
-- 
+- [Kinsta - Caracteristicas](https://kinsta.com/es/base-de-conocimiento/que-es-nginx/)
+
+- [Kinsta - Instalacion](https://kinsta.com/es/base-de-conocimiento/instalar-nginx/#ubuntu-3)
+
+## Licencia
+
+![image](/img/licencia.PNG)
