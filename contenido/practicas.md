@@ -18,7 +18,7 @@ Para ver los archivos de configuracion, situarse en /etc/nginx y ejecutar:
 - **/etc/nginx/conf.d/ y /etc/nginx/sites-available/:** Archivos de configuración específicos para cada sitio o aplicacion. Definen como se debe manejar el tráfico. Enlazados a **/etc/nginx/sites-enabled/** para activarlos.
 
 
-## D) Página web por defecto
+## C) Página web por defecto
 
 Modificar la página web que lanza por defecto y personalizarla:
 
@@ -34,7 +34,7 @@ Resultado:
 
 ![image](/img/practica5.png)
 
-## C) Virtual Hosting
+## D) Virtual Hosting
 
 Nuestro servidor web ofrecera balanceo de carga desde https a dos sitios web que tengan también https.
 
@@ -42,7 +42,11 @@ Nuestro servidor web ofrecera balanceo de carga desde https a dos sitios web que
 - **Servidor de aplicación 1:** 172.26.2.205
 - **Servidor de aplicación 2:** 172.26.2.55
 
-Crear el siguiente fichero de configuracion en /etc/nginx/conf.d/loadbalancer.conf y editarlo:
+Lo primero será definir el nombre de dominio modificando el fichero /etc/hosts:
+
+![image](/img/practica14.png)
+
+Posteriormente, crear el siguiente fichero de configuracion en /etc/nginx/conf.d/loadbalancer.conf y editarlo:
 
 ![image](/img/practica6.png)
 
