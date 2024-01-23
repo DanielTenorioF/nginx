@@ -18,7 +18,7 @@ Para ver los archivos de configuracion, situarse en /etc/nginx y ejecutar:
 - **/etc/nginx/conf.d/ y /etc/nginx/sites-available/:** Archivos de configuración específicos para cada sitio o aplicacion. Definen como se debe manejar el tráfico. Enlazados a **/etc/nginx/sites-enabled/** para activarlos.
 
 
-## C) Página web por defecto
+## D) Página web por defecto
 
 Modificar la página web que lanza por defecto y personalizarla:
 
