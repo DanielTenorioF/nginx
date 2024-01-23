@@ -38,6 +38,33 @@ Resultado:
 
 Nuestro servidor web ofrecera balanceo de carga desde https a dos sitios web que tengan también https.
 
+- **Balanceo de carga Nginx:** 172.26.2.5
+- **Servidor de aplicación 1:** 172.26.2.205
+- **Servidor de aplicación 2:** 172.26.2.55
+
 Crear el siguiente fichero de configuracion en /etc/nginx/conf.d/loadbalancer.conf y editarlo:
 
 ![image](/img/practica6.png)
+
+En el Servidor de Aplicacion 1, eliminar el archivo index.html por defecto en /usr/share/nginx/html/ y crear uno nuevo:
+
+![image](/img/practica6.png)
+![image](/img/practica7.png)
+
+Hacer lo mismo en el Servidor de Aplicacion 2:
+
+![image](/img/practica8.png)
+![image](/img/practica9.png)
+
+En el Balanceador de Carga Nginx, eliminar el archivo de configuracion predeterminado y crear uno nuevo en /etc/nginx/conf.d/load-balancing.conf
+
+![image](/img/practica10.png)
+![image](/img/practica11.png)
+
+Verificar errores de sintaxis ejecutando:
+
+![image](/img/practica12.png)
+
+Por último, para aplicar los cambios, reiniciar el servicio.
+
+![image](/img/practica13.png)
