@@ -31,11 +31,12 @@ Modificar la página web que lanza por defecto y personalizarla:
 ![image](/img/practica4.png)
 
 Resultado:
+
 ![image](/img/practica5.png)
 
 ## C) Virtual Hosting
 
-Nuestro servidor web ofrecera balanceo de carga desde https  a dos sitios web que tengan también https.
+Nuestro servidor web ofrecera balanceo de carga desde https a dos sitios web que tengan también https.
 
 Crear el siguiente fichero de configuracion en /etc/nginx/conf.d/loadbalancer.conf y editarlo:
 
