@@ -56,7 +56,7 @@ Hacer lo mismo en el Servidor de Aplicacion 2:
 ![image](/img/practica8.png)
 ![image](/img/practica9.png)
 
-En el Balanceador de Carga Nginx, eliminar el archivo de configuracion predeterminado y crear uno nuevo en /etc/nginx/conf.d/load-balancing.conf
+En el Balanceador de Carga Nginx, eliminar el archivo de configuracion predeterminado y crear uno nuevo en /etc/nginx/conf.d/loadbalancer.conf
 
 ![image](/img/practica10.png)
 ![image](/img/practica11.png)
