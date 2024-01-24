@@ -46,29 +46,75 @@ Lo primero será definir el nombre de dominio modificando el fichero /etc/hosts:
 
 ![image](/img/practica14.png)
 
-Posteriormente, crear el siguiente fichero de configuracion en /etc/nginx/conf.d/loadbalancer.conf y editarlo:
+En el Servidor de Aplicacion 1, modificar el index.html por defecto en /var/www/html/ y crear uno nuevo:
 
 ![image](/img/practica6.png)
-
-En el Servidor de Aplicacion 1, eliminar el archivo index.html por defecto en /usr/share/nginx/html/ y crear uno nuevo:
-
-![image](/img/practica6.png)
-![image](/img/practica7.png)
 
 Hacer lo mismo en el Servidor de Aplicacion 2:
+
+![image](/img/practica7.png)
+
+En el Balanceador de Carga Nginx, eliminar el archivo de configuracion predeterminado y crear uno nuevo en /etc/nginx/conf.d/loadbalancer.conf
 
 ![image](/img/practica8.png)
 ![image](/img/practica9.png)
 
-En el Balanceador de Carga Nginx, eliminar el archivo de configuracion predeterminado y crear uno nuevo en /etc/nginx/conf.d/loadbalancer.conf
-
-![image](/img/practica10.png)
-![image](/img/practica11.png)
-
 Verificar errores de sintaxis ejecutando:
 
-![image](/img/practica12.png)
+![image](/img/practica10.png)
 
 Por último, para aplicar los cambios, reiniciar el servicio.
 
+![image](/img/practica11.png)
+
+Para verificar el Balanceo de Carga Nginx, abrir el navegador web y acceder al servidor de equilibrio introduciendo en la URL http://**nombreDominio**.com.
+
+En este caso seria http://**danielt**.com.
+
+Primero se redirigira al Servidor de Aplicaciones 1:
+
+![image](/img/practica12.png)
+
+Actualizar la página repetidas veces, esto deberá de cargar la apliación desde el Servidor de Aplicaciones 2:
+
 ![image](/img/practica13.png)
+
+### Balanceo de Carga https
+
+Una vez compleado y verificado los apartados anteriores, en el Balanceador de Carga Nginx, comprobar si está instalado **openssl**:
+
+![image](/img/practica15.png)
+
+Una vez instalado, crear un certificado si no tenemos uno creado:
+
+Ejecutar el siguiente comando:
+
+![image](/img/practica16.png)
+
+Darle a intro y aceptar para terminar:
+
+![image](/img/practica17.png)
+
+**Se crearan 2 archivos**
+
+A continuación, crear el directorio certificados en /etc/nginx/ y mover los  
+
+![image](/img/practica18.png)
+
+Modificar el fichero /etc/nginx/conf.d/loadbalancer.conf:
+
+![image](/img/practica19.png)
+
+Reiniciar el servicio:
+
+![image](/img/practica20.png)
+
+### Resultado
+
+En la URL del navegador, introducir https://**nombreDominio**.com.
+
+En este caso seria https://**danielt**.com.
+
+![image](/img/practica21.png)
+
+![image](/img/practica22.png)
