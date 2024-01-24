@@ -20,6 +20,12 @@
 
 - [Clouding.io - Configuracion del Servidor de Balanceo](https://help.clouding.io/hc/es/articles/360019908839-C%C3%B3mo-configurar-un-servidor-de-balanceo-de-carga-Nginx-en-Ubuntu-20-04)
 
+- [Chakray - Configuracion HTTPS](https://www.chakray.com/es/configura-nginx-loadbalancer-cluster-dos-nodos-wso2-ei/#configuracion-NGINX-cluster)
+
+## Autor
+
+- [Daniel Tenorio](https://github.com/DanielTenorioF/)
+
 ## Licencia
 
 ![image](/img/licencia.PNG)
