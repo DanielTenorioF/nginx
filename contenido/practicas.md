@@ -113,7 +113,7 @@ Reiniciar el servicio:
 
 En la URL del navegador, introducir https://**nombreDominio**.com.
 
-En este caso seria https://**danielt**.com.
+En este caso seria https://www.**danielt**.com.
 
 ![image](/img/practica21.png)
 
