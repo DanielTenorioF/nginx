@@ -67,7 +67,7 @@ Por último, para aplicar los cambios, reiniciar el servicio.
 
 ![image](/img/practica11.png)
 
-Para verificar el Balanceo de Carga Nginx, abrir el navegador web y acceder al servidor de equilibrio introduciendo en la URL http://www.**nombreDominio**.com.
+Para verificar el Balanceo de Carga Nginx, abrir el navegador web y acceder al servidor de equilibrio introduciendo en la URL http://www.nombreDominio.com.
 
 En este caso seria http://www.danielt.com.
 
@@ -111,9 +111,9 @@ Reiniciar el servicio:
 
 ### Resultado
 
-En la URL del navegador, introducir https://www.**nombreDominio**.com.
+En la URL del navegador, introducir https://www.nombreDominio.com.
 
-En este caso seria https://www.**danielt**.com.
+En este caso seria https://www.danielt.com.
 
 ![image](/img/practica21.png)
 
